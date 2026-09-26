@@ -100,7 +100,7 @@ print(f'versione {n}: copiati {len(visti)} file di three')
 
 # ── 3. push ──
 msg = sys.argv[1] if len(sys.argv) > 1 else f'Versione {n}'
-subprocess.run(['git', 'add', '-A'], cwd=REPO, check=True)
+subprocess.run(['git', 'add', '-A'], cwd=REPO, check=True, stderr=subprocess.DEVNULL)
 subprocess.run(['git', 'commit', '-q', '-m', msg + '\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'], cwd=REPO)
 subprocess.run(['git', 'push', '-q'], cwd=REPO, check=True)
 print('pubblicata la versione', n)

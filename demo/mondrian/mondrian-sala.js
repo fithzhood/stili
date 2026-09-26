@@ -1,5 +1,5 @@
 // La sala del museo: parete, luce del faretto, cornice a listello, ombra del quadro, didascalia.
-import { mulberry } from './mondrian-trama.js?v=2';
+import { mulberry } from './mondrian-trama.js?v=3';
 
 /** Parete + cornice + ombra, in una tela in cache (si rifà a ogni resize). */
 export function creaSala(W, H, dpr, X0, Y0, pw, ph) {
