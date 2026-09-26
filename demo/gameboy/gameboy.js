@@ -156,7 +156,7 @@ function disegnaCorpo() {
 // ── Immagini (già a 4 livelli) ──
 const IMG = {};
 const NOMI = ['floor', 'nature', 'house', 'water', 'boy', 'oldman', 'villager', 'woman', 'chicken', 'cat', 'ripples', 'font'];
-const carica = n => new Promise((ok, ko) => { const i = new Image(); i.onload = () => { IMG[n] = i; ok(); }; i.onerror = () => ko(new Error('Manca ' + n)); i.src = 'assets/' + n + '.png?v=6'; });
+const carica = n => new Promise((ok, ko) => { const i = new Image(); i.onload = () => { IMG[n] = i; ok(); }; i.onerror = () => ko(new Error('Manca ' + n)); i.src = 'assets/' + n + '.png?v=7'; });
 let FONT_CHIARO;
 
 // ── Mondo ──

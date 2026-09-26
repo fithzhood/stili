@@ -2,7 +2,7 @@
 // la camera in volo libero, la risoluzione che si adatta per restare a 60 fps,
 // e l'ingrandimento finale dell'immagine calcolata a risoluzione ridotta.
 import * as THREE from 'three';
-import { FRAG, VERT } from './scena.js?v=6';
+import { FRAG, VERT } from './scena.js?v=7';
 
 try {
   const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: Demo.shot, powerPreference: 'high-performance' });

@@ -1,7 +1,7 @@
 // Il quadro "classico": composizione per suddivisione ricorsiva (albero di tagli).
 // Ogni foglia è un mattone. Quando una foglia cade, la linea che la separava dalla sorella
 // scorre fino al bordo e la sorella si allarga: il quadro si ricompone restando un Mondrian.
-import { mulberry } from './mondrian-trama.js?v=6';
+import { mulberry } from './mondrian-trama.js?v=7';
 
 export const PW = 1000, PH = 1080;          // tela, in unità
 export const COL = {

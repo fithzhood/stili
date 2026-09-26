@@ -1,7 +1,7 @@
 // Arredo del borgo: selciato, canale, ponticello ad arco, fontana, lampioni, alberi a sprite, oggetti.
 import * as THREE from 'three';
-import { tex, mat, quad, trave } from './mondo.js?v=6';
-import { ciuffo, fiori } from './pixel.js?v=6';
+import { tex, mat, quad, trave } from './mondo.js?v=7';
+import { ciuffo, fiori } from './pixel.js?v=7';
 
 export const CANALE = { x0: 8, x1: 11.6, acqua: -0.78 };
 export const PONTE = { x0: 7.0, x1: 12.6, mezzaL: 1.25, alto: 0.75 };

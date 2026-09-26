@@ -1,8 +1,8 @@
 // Variante "Broadway Boogie Woogie": griglia di strade gialle punteggiate di quadratini
 // rossi, blu e grigi, con qualche blocco più grande. I mattoni sono i quadratini e i blocchi.
 // Quando un quadratino salta, gli altri della stessa strada scivolano e si ridistribuiscono.
-import { mulberry } from './mondrian-trama.js?v=6';
-import { PW, PH, COL } from './mondrian-quadro.js?v=6';
+import { mulberry } from './mondrian-trama.js?v=7';
+import { PW, PH, COL } from './mondrian-quadro.js?v=7';
 
 const G = '#eec51c', RS = '#c9311e', BL = '#2447a0', GR = '#cdc9bf', FONDO = '#f3f0e7';
 const clamp = (v, a, b) => v < a ? a : v > b ? b : v;
