@@ -53,6 +53,12 @@ window.STILI = [
     tecnica: 'Colori ridotti agli inchiostri di stampa, retino Ben-Day a punti allineato allo schermo, tratteggio nelle ombre, contorni spessi, onomatopee che esplodono.',
     controlli: 'WASD per muoversi · spazio per colpire · trascina per girare la visuale' },
 
+  { id: 'papermario', dim: '3D', titolo: 'Personaggi di carta',
+    ispirazione: 'Paper Mario',
+    descrizione: 'Personaggi sottili come un foglio in un mondo di cartoncino: quando si girano, si voltano come una pagina.',
+    tecnica: 'Figure piatte con bordo bianco da ritaglio, un foglio a due facce che si volta come una pagina; colline di cartone ondulato, alberi piegati a V con la linguetta, nuvole appese al filo, luce morbida da lampada.',
+    controlli: 'WASD per camminare · spazio per saltare · salta sullo scarabeo per appiattirlo' },
+
   // ───────────────────────────── 2D ─────────────────────────────
   { id: 'pixel16', dim: '2D', titolo: 'Pixel art 16 bit',
     ispirazione: 'Super Nintendo',

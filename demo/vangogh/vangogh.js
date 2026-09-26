@@ -7,7 +7,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { FullScreenQuad } from 'three/addons/postprocessing/Pass.js';
-import { costruisciMondo, campionaSuperfici, rng } from './vangogh-mondo.js?v=3';
+import { costruisciMondo, campionaSuperfici, rng } from './vangogh-mondo.js?v=4';
 
 THREE.ColorManagement.enabled = false;
 const Q = Demo.query;

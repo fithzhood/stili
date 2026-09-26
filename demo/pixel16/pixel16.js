@@ -31,7 +31,7 @@ function carica(nome) {
     const im = new Image();
     im.onload = () => { IMG[nome] = im; ok(); };
     im.onerror = () => ko(new Error('Manca ' + nome + '.png'));
-    im.src = 'assets/' + nome + '.png?v=3';
+    im.src = 'assets/' + nome + '.png?v=4';
   });
 }
 

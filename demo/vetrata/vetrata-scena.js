@@ -1,9 +1,9 @@
 // La navata: sole comandato dal mouse, ore del giorno, nuvole, polvere nei raggi.
-import { TW, TH } from './vetrata-disegno.js?v=3';
-import { SCENA } from './vetrata-glsl-scena.js?v=3';
-import { VERT, PUNTI_V, PUNTI_F } from './vetrata-glsl-post.js?v=3';
-import { creaGL, programma, textura, creaPost } from './vetrata-gl.js?v=3';
-import { creaPolvere } from './vetrata-polvere.js?v=3';
+import { TW, TH } from './vetrata-disegno.js?v=4';
+import { SCENA } from './vetrata-glsl-scena.js?v=4';
+import { VERT, PUNTI_V, PUNTI_F } from './vetrata-glsl-post.js?v=4';
+import { creaGL, programma, textura, creaPost } from './vetrata-gl.js?v=4';
+import { creaPolvere } from './vetrata-polvere.js?v=4';
 
 const ORE = [
   { nome: 'Alba', sun: [1.0, 0.56, 0.44], int: 5.5, sky: [0.26, 0.24, 0.4], amb: [0.05, 0.045, 0.065], el: [22, 40] },
