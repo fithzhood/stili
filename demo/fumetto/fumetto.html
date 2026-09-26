@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pop art — Stili</title>
+<link rel="stylesheet" href="../../comune/comune.css?v=1">
+<style>
+  @font-face { font-family: 'Bangers'; src: url('assets/Bangers-Regular.ttf') format('truetype'); }
+  html, body { background: #f3ead2; }
+  /* la pagina è un foglio di fumetto: carta avorio attorno, la vignetta al centro */
+  body::before { content: ''; position: fixed; inset: 0; pointer-events: none;
+    background-image: radial-gradient(rgba(120, 90, 40, .10) 1px, transparent 1.3px);
+    background-size: 5px 5px; }
+  #vignetta { position: fixed; left: 18px; right: 18px; top: 60px; bottom: 18px;
+    border: 5px solid #111; box-shadow: 5px 6px 0 rgba(0, 0, 0, .18); overflow: hidden; background: #f6efdc; }
+  body.shot #vignetta { top: 18px; }
+  #vignetta canvas { position: absolute; left: 0; top: 0; }
+  #didascalia { position: absolute; left: -1px; top: -1px; z-index: 5; background: #ffe23a;
+    border: 4px solid #111; border-width: 0 4px 4px 0; padding: 9px 18px 7px 14px;
+    font: 22px/1.05 'Bangers', Impact, sans-serif; letter-spacing: .06em; color: #111; max-width: 46%; }
+  #fx { pointer-events: none; z-index: 4; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "../../vendor/three/three.module.js", "three/addons/": "../../vendor/three/addons/" } }
+</script>
+</head>
+<body data-demo="fumetto">
+<div id="vignetta"><div id="didascalia">INTANTO, SUI TETTI DELLA CITTÀ...</div></div>
+<script src="../../stili-data.js?v=1"></script>
+<script src="../../comune/comune.js?v=1"></script>
+<script type="module" src="fumetto.js?v=1"></script>
+</body>
+</html>

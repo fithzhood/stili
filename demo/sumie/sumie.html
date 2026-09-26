@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>Inchiostro sumi-e — Stili</title>
+<link rel="stylesheet" href="../../comune/comune.css?v=1">
+<script type="importmap">
+{ "imports": { "three": "../../vendor/three/three.module.js", "three/addons/": "../../vendor/three/addons/" } }
+</script>
+<style>
+  body { background: #efe6d2; }
+  canvas.gl { display: block; }
+  #tratto { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; transition: opacity .7s; }
+  #iscrizione { position: fixed; right: 3vw; top: 9vh; height: 40vh; pointer-events: none; }
+  body.pennello canvas.gl { cursor: crosshair; }
+</style>
+</head>
+<body data-demo="sumie">
+<script src="../../stili-data.js?v=1"></script>
+<script src="../../comune/comune.js?v=1"></script>
+<script type="module" src="sumie.js?v=1"></script>
+</body>
+</html>
