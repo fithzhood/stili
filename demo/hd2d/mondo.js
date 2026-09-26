@@ -10,7 +10,7 @@ export function initTex(manager) { loader = new THREE.TextureLoader(manager); }
 
 export function tex(nome) {
   if (cacheTex[nome]) return cacheTex[nome];
-  const t = loader.load(`assets/tex/${nome}.png?v=5`);
+  const t = loader.load(`assets/tex/${nome}.png?v=6`);
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
   t.magFilter = THREE.NearestFilter;            // il pixel resta pixel
   t.minFilter = THREE.LinearMipmapLinearFilter; // ma da lontano non sfarfalla

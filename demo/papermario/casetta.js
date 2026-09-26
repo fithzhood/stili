@@ -1,8 +1,8 @@
 // La casetta a cubo di cartone (scatola da imballo con porta e finestre di carta), il ponte ad arco,
 // lo steccato di bastoncini da gelato e le onde di carta del fiume.
 import * as THREE from 'three';
-import { texDa, kraft, ondulato, tela, fibre, piega } from './carta.js?v=5';
-import { animati } from './mondo.js?v=5';
+import { texDa, kraft, ondulato, tela, fibre, piega } from './carta.js?v=6';
+import { animati } from './mondo.js?v=6';
 
 const TRATTO = '#3a2418';
 function facciata(tipo) {

@@ -1,6 +1,6 @@
 // Fondali di carta: alberi, cespugli, nuvole, fiori ritagliati; il foglio del prato col sentiero e il fiume;
 // il cielo; il cartoncino delle colline con le pieghe e il bordo consumato.
-import { tela, ritaglio, fibre, piega, rnd, texDa } from './carta.js?v=5';
+import { tela, ritaglio, fibre, piega, rnd, texDa } from './carta.js?v=6';
 
 const TRATTO = '#3a2418';
 /** Unione di cerchi con un solo contorno: prima tutti i contorni spessi, poi tutti i riempimenti. */

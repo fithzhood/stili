@@ -4,7 +4,7 @@
 import * as THREE from 'three';
 import { FullScreenQuad } from 'three/addons/postprocessing/Pass.js';
 import { FXAAShader } from 'three/addons/shaders/FXAAShader.js';
-import { costruisciMondo, altezza, vn, rng } from './moebius-mondo.js?v=5';
+import { costruisciMondo, altezza, vn, rng } from './moebius-mondo.js?v=6';
 
 THREE.ColorManagement.enabled = false;   // i colori della tavolozza vanno a schermo tali e quali
 

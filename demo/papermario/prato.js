@@ -1,6 +1,6 @@
 // Il foglio del prato: un'unica grande carta verde con il sentiero incollato sopra, il fiume
 // di carta azzurra, ciuffi d'erba a pennarello e le pieghe di un foglio aperto.
-import { tela, fibre, piega, rnd, texDa } from './carta.js?v=5';
+import { tela, fibre, piega, rnd, texDa } from './carta.js?v=6';
 
 export const TERRA = { x0: -30, x1: 34, z0: -14, z1: 8, S: 32 };
 export const FIUME = { x0: 9.6, x1: 12.4 };

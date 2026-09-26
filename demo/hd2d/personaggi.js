@@ -2,8 +2,8 @@
 // Il piano guarda la camera solo sull'asse verticale; la direzione disegnata si sceglie
 // confrontando la direzione di marcia con la direzione della camera, come in un JRPG.
 import * as THREE from 'three';
-import { ombraTonda } from './pixel.js?v=5';
-import { altezza } from './arredi.js?v=5';
+import { ombraTonda } from './pixel.js?v=6';
+import { altezza } from './arredi.js?v=6';
 
 const COLONNE = 4, RIGHE = 7;
 const LATO = 1.7;                  // metri del riquadro da 16 px
@@ -11,7 +11,7 @@ let texOmbra = null;
 
 export class Pupo {
   constructor(scene, loader, nome, x, z) {
-    const t = loader.load(`assets/sprite/${nome}.png?v=5`);
+    const t = loader.load(`assets/sprite/${nome}.png?v=6`);
     t.magFilter = t.minFilter = THREE.NearestFilter; t.generateMipmaps = false; t.colorSpace = THREE.SRGBColorSpace;
     t.repeat.set(1 / COLONNE, 1 / RIGHE);
     this.tex = t;

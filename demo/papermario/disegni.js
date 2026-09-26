@@ -1,6 +1,6 @@
 // I personaggi di carta, disegnati a mano nel codice: un piccolo esploratore (l'eroe), una coniglietta,
 // un gufo postino e uno scarabeo dispettoso. Tratto scuro caldo, colori pieni, un'ombra a campitura.
-import { ritaglio } from './carta.js?v=5';
+import { ritaglio } from './carta.js?v=6';
 
 const TRATTO = '#3a2418';
 function forma(g, path, fill, lw = 5) { g.beginPath(); path(g); g.fillStyle = fill; g.fill(); g.lineWidth = lw; g.lineJoin = 'round'; g.strokeStyle = TRATTO; g.stroke(); }

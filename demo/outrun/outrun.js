@@ -2,8 +2,8 @@
 // Si disegna tutto su una tela piccola (360 righe, come una scheda da sala giochi un po' più
 // generosa), poi si ingrandisce a pixel pieni, con un bagliore sulle parti al neon e le scanline.
 import { SEG, LARGH, CAM_H, CAM_D, VISTA, segmenti, costruisciPista, trova, preparaCielo, disegnaCielo,
-  disegnaStrada, disegnaSprite } from './strada.js?v=5';
-import { creaSprite, disegnaAuto } from './sprite.js?v=5';
+  disegnaStrada, disegnaSprite } from './strada.js?v=6';
+import { creaSprite, disegnaAuto } from './sprite.js?v=6';
 
 const LH = 360;
 let LW = 640;

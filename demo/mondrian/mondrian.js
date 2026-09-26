@@ -1,9 +1,9 @@
 // De Stijl — un breakout dentro un quadro di Mondrian.
 // Il gioco vive in "unità di tela" (1000 × 1080); il disegno scala tutto sulla finestra.
-import { mulberry, creaPennellate, creaTela } from './mondrian-trama.js?v=5';
-import { PW, PH, COL, quadroClassico } from './mondrian-quadro.js?v=5';
-import { quadroBoogie } from './mondrian-boogie.js?v=5';
-import { creaSala, didascalia } from './mondrian-sala.js?v=5';
+import { mulberry, creaPennellate, creaTela } from './mondrian-trama.js?v=6';
+import { PW, PH, COL, quadroClassico } from './mondrian-quadro.js?v=6';
+import { quadroBoogie } from './mondrian-boogie.js?v=6';
+import { creaSala, didascalia } from './mondrian-sala.js?v=6';
 
 const cv = document.createElement('canvas');
 cv.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;cursor:none';
