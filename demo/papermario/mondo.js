@@ -1,8 +1,8 @@
 // Il diorama: prato, cielo, colline di cartone ondulato, alberi piegati a V con la linguetta, nuvole appese al filo.
 import * as THREE from 'three';
-import { texDa, ondulato, kraft } from './carta.js?v=4';
-import * as S from './scenari.js?v=4';
-import { prato, TERRA } from './prato.js?v=4';
+import { texDa, ondulato, kraft } from './carta.js?v=5';
+import * as S from './scenari.js?v=5';
+import { prato, TERRA } from './prato.js?v=5';
 
 export const animati = [];      // {fn(t)}
 const profCache = new Map();

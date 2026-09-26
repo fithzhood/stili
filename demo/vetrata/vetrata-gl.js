@@ -1,5 +1,5 @@
 // Piccoli attrezzi WebGL2: programmi, texture, bersagli HDR, piramide del bagliore.
-import { VERT, GIU, SU, FINALE } from './vetrata-glsl-post.js?v=4';
+import { VERT, GIU, SU, FINALE } from './vetrata-glsl-post.js?v=5';
 
 export function creaGL(cv) {
   const gl = cv.getContext('webgl2', { antialias: false, preserveDrawingBuffer: Demo.shot, alpha: false });

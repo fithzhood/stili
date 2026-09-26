@@ -1,8 +1,8 @@
 // Il gioco: camminata sul piano, salto, il nemico che si ribalta piatto, le battute degli abitanti,
 // e la camera laterale-rialzata che segue l'esploratore.
 import * as THREE from 'three';
-import { scene, camera, renderer, eroe, npc, nemico, colliders, lampada, DIR_L, PONTE, FIUME, altezzaPonte } from './papermario.js?v=4';
-import { animati } from './mondo.js?v=4';
+import { scene, camera, renderer, eroe, npc, nemico, colliders, lampada, DIR_L, PONTE, FIUME, altezzaPonte } from './papermario.js?v=5';
+import { animati } from './mondo.js?v=5';
 
 const Q = Demo.query;
 const G = -24, SALTO = 8.2, VEL = 4.3;

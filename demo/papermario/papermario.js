@@ -1,13 +1,13 @@
 // Personaggi di carta, alla Paper Mario: un diorama di cartoncino sul tavolo, luce morbida da lampada,
 // e figure sottili come un foglio che si voltano come una pagina. Tutto disegnato nel codice.
 import * as THREE from 'three';
-import * as M from './mondo.js?v=4';
-import { casetta, ponte, steccato, altezzaPonte, PONTE } from './casetta.js?v=4';
-import * as S from './scenari.js?v=4';
-import * as D from './disegni.js?v=4';
-import { Foglio, fumetto } from './figura.js?v=4';
-import { FIUME } from './prato.js?v=4';
-import { rnd } from './carta.js?v=4';
+import * as M from './mondo.js?v=5';
+import { casetta, ponte, steccato, altezzaPonte, PONTE } from './casetta.js?v=5';
+import * as S from './scenari.js?v=5';
+import * as D from './disegni.js?v=5';
+import { Foglio, fumetto } from './figura.js?v=5';
+import { FIUME } from './prato.js?v=5';
+import { rnd } from './carta.js?v=5';
 
 const Q = Demo.query;
 Demo.carica('Ritaglio il cartoncino', 0.1);
@@ -70,4 +70,4 @@ const nemico = new Foglio(scene, [D.scarabeo()], 1.1, 4, 0.3);
 Object.assign(nemico, { stato: 'cammina', timer: 0, v: 1.3, a: 0.5, b: 7.2 });
 
 export { scene, camera, renderer, eroe, npc, nemico, colliders, lampada, DIR_L, PONTE, FIUME, altezzaPonte };
-import('./gioco.js?v=4').catch(Demo.errore);
+import('./gioco.js?v=5').catch(Demo.errore);

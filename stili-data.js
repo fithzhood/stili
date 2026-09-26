@@ -53,6 +53,11 @@ window.STILI = [
     tecnica: 'Colori ridotti agli inchiostri di stampa, retino Ben-Day a punti allineato allo schermo, tratteggio nelle ombre, contorni spessi, onomatopee che esplodono.',
     controlli: 'WASD per muoversi · spazio per colpire · trascina per girare la visuale' },
 
+  { id: 'hd2d', dim: '3D', titolo: 'HD-2D',
+    ispirazione: 'Octopath Traveler',
+    descrizione: 'Personaggi in pixel art dentro un diorama 3D, con la luce di una lanterna e la sfocatura da modellino.',
+    tecnica: 'Sprite a pixel su piani rivolti alla camera, mondo 3D a texture pixelate, luci calde dei lampioni e luna fredda con ombre, profondità di campo tilt-shift a bokeh, bagliore, raggi volumetrici, lucciole e pulviscolo, grading caldo-freddo.',
+    controlli: 'WASD per camminare · Q/E per ruotare la visuale' },
   { id: 'papermario', dim: '3D', titolo: 'Personaggi di carta',
     ispirazione: 'Paper Mario',
     descrizione: 'Personaggi sottili come un foglio in un mondo di cartoncino: quando si girano, si voltano come una pagina.',
