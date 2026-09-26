@@ -18,12 +18,19 @@ def sorgenti():
         for f in files:
             yield os.path.join(d, f)
 
-# ── 1. versione ──
+# Si pubblicano solo le demo finite, cioe' quelle che hanno l'anteprima in anteprime/<id>.jpg:
+# le altre restano fuori dal repo e spariscono dal registro pubblicato.
+PRONTE = {f[:-4] for f in os.listdir(os.path.join(ROOT, 'anteprime')) if f.endswith('.jpg')}
+def pubblicabile(p):
+    r = os.path.relpath(p, ROOT).replace(os.sep, '/').split('/')
+    return not (r[0] == 'demo' and len(r) > 2 and r[1] not in PRONTE)
+
+# ── 1. versione (solo nei file che si pubblicano: le demo in costruzione non si toccano) ──
 pv = os.path.join(ROOT, 'VERSIONE')
 n = int(open(pv).read().strip()) + 1 if os.path.exists(pv) else 1
 open(pv, 'w').write(str(n))
 for p in sorgenti():
-    if p.endswith(('.html', '.js')):
+    if p.endswith(('.html', '.js')) and pubblicabile(p):
         s = open(p, encoding='utf-8').read()
         s2 = re.sub(r'\?v=\d+', f'?v={n}', s)
         if s2 != s:
@@ -37,12 +44,6 @@ for x in os.listdir(REPO):
         continue
     q = os.path.join(REPO, x)
     shutil.rmtree(q) if os.path.isdir(q) else os.remove(q)
-# Si pubblicano solo le demo finite, cioe' quelle che hanno l'anteprima in anteprime/<id>.jpg:
-# le altre restano fuori dal repo e spariscono dal registro pubblicato.
-PRONTE = {f[:-4] for f in os.listdir(os.path.join(ROOT, 'anteprime')) if f.endswith('.jpg')}
-def pubblicabile(p):
-    r = os.path.relpath(p, ROOT).replace(os.sep, '/').split('/')
-    return not (r[0] == 'demo' and len(r) > 2 and r[1] not in PRONTE)
 for p in sorgenti():
     if not pubblicabile(p):
         continue
