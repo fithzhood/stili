@@ -1,6 +1,6 @@
 // Gli oggetti del sogno, disegnati a matita in coordinate locali (0,0 = dove toccano terra).
 // La forma viene da un generatore con seme fisso (uguale nelle tre varianti); il tremolio da D.R.
-import { rng, curva, ellisse, tratto, pastello, ombra } from './matita.js?v=7';
+import { rng, curva, ellisse, tratto, pastello, ombra } from './matita.js?v=8';
 
 export function albero(D) {
   const S = rng(5);

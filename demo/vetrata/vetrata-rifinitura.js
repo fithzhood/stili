@@ -1,6 +1,6 @@
 // Vetro soffiato: ogni tessera ha tinta, spessore e inclinazione suoi; dentro la tessera
 // ci sono venature, bolle e graffi. Le due texture escono in radice quadrata (più precisione ai blu scuri).
-import { TW, TH } from './vetrata-disegno.js?v=7';
+import { TW, TH } from './vetrata-disegno.js?v=8';
 
 export function rifinisci({ reg, mappa, semi, cella, dist, ferro, dP, rnd }) {
   const N = TW * TH, LW = 2.7;

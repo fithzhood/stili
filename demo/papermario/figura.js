@@ -1,7 +1,7 @@
 // La figura di carta: due facce su un foglio sottilissimo (davanti il disegno, dietro lo speculare
 // schiarito), che si volta come una pagina quando cambia verso e ondeggia camminando.
 import * as THREE from 'three';
-import { texDa, retro, tela, ritaglio } from './carta.js?v=7';
+import { texDa, retro, tela, ritaglio } from './carta.js?v=8';
 
 let texOmbra;
 function ombraTex() {

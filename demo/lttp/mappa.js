@@ -87,7 +87,7 @@ function calcolaBase() {
   }
 }
 
-import { costruisciLuoghi } from './luoghi.js?v=7';
+import { costruisciLuoghi } from './luoghi.js?v=8';
 export function costruisci() {
   costruisciLuoghi({ rett, blocca, albero, gemelli, pino, casa, recinto, cesp, erba, fiore, sasso, ogg });
   calcolaBase();

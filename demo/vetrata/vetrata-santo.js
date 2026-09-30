@@ -1,6 +1,6 @@
 // Il santo di ogni lancetta (Pietro con le chiavi, Paolo con la spada) e il baldacchino sopra.
 // g = tela delle regioni, p = tela della grisaglia, R = registra una regione, id = colore dell'id.
-import { C } from './vetrata-disegno.js?v=7';
+import { C } from './vetrata-disegno.js?v=8';
 
 function forma(g, n, id, f) { g.fillStyle = id(n); g.beginPath(); f(g); g.fill(); }
 function linea(p, pts, w = 1.3, a = 0.9) {

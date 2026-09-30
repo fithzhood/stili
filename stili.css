@@ -49,6 +49,13 @@ h1 { margin: 0; font: 300 clamp(64px, 11vw, 150px)/.9 var(--serif); letter-spaci
 .didascalia h2 { margin: 0; font: 600 19px/1.2 var(--serif); letter-spacing: -.005em; }
 .didascalia p { margin: 2px 0 0; font-size: 13.5px; color: var(--tenue); font-style: italic; font-family: var(--serif); font-weight: 300; }
 
+.orig { display: inline-flex; align-items: center; gap: 6px; margin-top: 7px; font: 500 11.5px var(--sans); letter-spacing: .02em; color: var(--tenue); }
+.orig::before { content: ""; width: 7px; height: 7px; border-radius: 50%; box-sizing: border-box; }
+.orig.codice { color: var(--oro); }
+.orig.codice::before { background: var(--oro); }
+.orig.pronti::before { border: 1.5px solid var(--tenue); }
+.quadro .desc em { display: block; margin-top: 6px; font-style: normal; font-size: 12px; opacity: .75; }
+
 .piede { max-width: 1320px; margin: 0 auto; padding: 24px 24px 60px; border-top: 1px solid var(--linea); color: var(--tenue); font-size: 14px; }
 .piede kbd { font: 600 12px var(--sans); border: 1px solid var(--linea); border-radius: 4px; padding: 1px 6px; color: var(--carta); }
 .ver { font-size: 11px; opacity: .45; margin-top: 18px; }

@@ -1,5 +1,5 @@
 // Disegno del mondo a strati: pavimento animato, ombre, oggetti e personaggi per quota, chiome sopra.
-import { T, C, R, base, acquaPiena, taglio, OGG, SOPRA, OMBRE, FIORI, DECOR, NINFEE, hash } from './mappa.js?v=7';
+import { T, C, R, base, acquaPiena, taglio, OGG, SOPRA, OMBRE, FIORI, DECOR, NINFEE, hash } from './mappa.js?v=8';
 export const IMG = {};
 export const cam = { x: 0, y: 0 };
 let ombre = null;

@@ -35,6 +35,7 @@
     <div class="dm-sk-ispi">${info.ispirazione}</div>
     <p>${info.descrizione}</p>
     <h4>Come è fatto</h4><p>${info.tecnica}</p>
+    <h4>Grafica</h4><p>${info.asset ? 'Con asset già pronti, tutti a licenza libera: ' + info.asset + '. Il resto è disegnato dal codice.' : 'Tutta disegnata dal codice: nessuna immagine o modello preso da fuori.'}</p>
     <h4>Comandi</h4><p class="dm-sk-cmd">${info.controlli}</p>
     <div class="dm-sk-extra"></div>`;
   const cmd = el('div', 'dm-cmd', info.controlli);

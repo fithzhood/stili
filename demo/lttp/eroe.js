@@ -1,7 +1,7 @@
 // L'eroe: camminata nelle quattro direzioni, fendente ad arco che taglia erba e cespugli,
 // ciuffi e foglie che volano, cuori e monete che saltano fuori e si raccolgono.
-import { T, C, R, solido, taglio } from './mappa.js?v=7';
-import { IMG, cam } from './disegno.js?v=7';
+import { T, C, R, solido, taglio } from './mappa.js?v=8';
+import { IMG, cam } from './disegno.js?v=8';
 
 export const G = { x: 0, y: 0, dir: 0, passo: 0, muove: false, colpo: -1, cuori: 7, maxCuori: 6, monete: 42, lampo: 0 };
 export const PARTI = [];     // ciuffi e foglie in volo

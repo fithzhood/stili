@@ -1,7 +1,7 @@
 // La vita del villaggio: abitanti che passeggiano, galline e un gatto, farfalle, foglie che cadono.
-import { T, SOPRA } from './mappa.js?v=7';
-import { IMG, cam } from './disegno.js?v=7';
-import { G, libero, caso } from './eroe.js?v=7';
+import { T, SOPRA } from './mappa.js?v=8';
+import { IMG, cam } from './disegno.js?v=8';
+import { G, libero, caso } from './eroe.js?v=8';
 
 export const ABITANTI = [];
 const BESTIE = [], FARFALLE = [], FOGLIE = [];

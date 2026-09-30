@@ -1,7 +1,7 @@
 // L'aria del diorama: raggi di luce volumetrici (coni additivi che si spengono di taglio),
 // coni caldi sotto i lampioni, lucciole e pulviscolo, spruzzi della fontana, riflessi sul canale.
 import * as THREE from 'three';
-import { rnd, alone } from './pixel.js?v=7';
+import { rnd, alone } from './pixel.js?v=8';
 
 export const U = { uT: { value: 0 }, uScala: { value: 1 } };
 

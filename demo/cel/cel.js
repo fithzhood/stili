@@ -368,7 +368,7 @@ function cespuglio(x, z, sc) {
 }
 
 const caricatore = new GLTFLoader();
-const carica = (f) => new Promise((ok, ko) => caricatore.load('assets/' + f + '?v=7', ok, undefined, ko));
+const carica = (f) => new Promise((ok, ko) => caricatore.load('assets/' + f + '?v=8', ok, undefined, ko));
 const K = 1.35;   // scala dei pezzi Kenney
 const ostacoli = [];
 const solidi = [];   // ciò che la camera non deve attraversare

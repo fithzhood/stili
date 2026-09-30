@@ -4,12 +4,12 @@
 // tilt-shift a bokeh che trasforma la piazza in un modellino, bagliore, grading caldo-freddo.
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { initTex, casa, mat, trave } from './mondo.js?v=7';
-import * as A from './arredi.js?v=7';
-import { Pupo, Passante } from './personaggi.js?v=7';
-import * as FX from './effetti.js?v=7';
-import { creaPost } from './post.js?v=7';
-import { rnd } from './pixel.js?v=7';
+import { initTex, casa, mat, trave } from './mondo.js?v=8';
+import * as A from './arredi.js?v=8';
+import { Pupo, Passante } from './personaggi.js?v=8';
+import * as FX from './effetti.js?v=8';
+import { creaPost } from './post.js?v=8';
+import { rnd } from './pixel.js?v=8';
 
 const Q = Demo.query;
 Demo.carica('Accendo le lanterne', 0.05);
@@ -133,7 +133,7 @@ A.festone(scene, new THREE.Vector3(-12.7, 4.0, 4.5), new THREE.Vector3(-3.0, 4.0
 // oggetti Kenney (stessa famiglia delle texture)
 const gltf = new GLTFLoader(manager);
 const OGGETTI = [['detail-barrel', -12.4, -8.3, 0.3], ['detail-barrel', -12.2, -7.6, 1.2], ['detail-crate', 7.0, -9.6, 0.2], ['barrels', 13.4, 4.4, 1.6], ['detail-crate-small', 7.2, -8.8, 0.9], ['detail-crate', -12.5, 8.0, 0.4], ['detail-barrel', 13.3, -7.6, 0]];
-const promOggetti = [...new Set(OGGETTI.map(o => o[0]))].map(n => gltf.loadAsync(`assets/props/${n}.glb?v=7`).then(g => [n, g.scene]));
+const promOggetti = [...new Set(OGGETTI.map(o => o[0]))].map(n => gltf.loadAsync(`assets/props/${n}.glb?v=8`).then(g => [n, g.scene]));
 
 // ─────────────── aria e luce volumetrica ───────────────
 const raggi = [];

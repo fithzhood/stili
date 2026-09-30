@@ -1,7 +1,7 @@
 // Il mondo di sogno: dove stanno le cose, cosa dicono, e i loro disegni prerenderizzati.
-import { rng, tratto, prerendi } from './matita.js?v=7';
-import { albero, lampadina, lucePavimento, porta, gatto, fiori, buio } from './oggetti.js?v=7';
-import { coperta, amici, protagonista } from './amici.js?v=7';
+import { rng, tratto, prerendi } from './matita.js?v=8';
+import { albero, lampadina, lucePavimento, porta, gatto, fiori, buio } from './oggetti.js?v=8';
+import { coperta, amici, protagonista } from './amici.js?v=8';
 
 const FRASE_FIORI = 'Fiori di pastello. Profumano di temperino.';
 // x, y = punto d'appoggio nel mondo; box = riquadro del disegno; urti = cerchi {dx, dy, r}; parla = punto a cui avvicinarsi

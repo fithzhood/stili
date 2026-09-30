@@ -1,7 +1,7 @@
 // HUD in alto come nel 1991: barra della magia, riquadro dell'oggetto, monete, "- VITA -" e cuori.
 // Riquadro dei dialoghi con il testo che scorre lettera per lettera.
-import { IMG } from './disegno.js?v=7';
-import { G } from './eroe.js?v=7';
+import { IMG } from './disegno.js?v=8';
+import { G } from './eroe.js?v=8';
 
 let BIANCO, SCURO;
 function tinta(col) {

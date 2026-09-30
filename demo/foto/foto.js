@@ -10,7 +10,7 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { Pass, FullScreenQuad } from 'three/addons/postprocessing/Pass.js';
-import * as O from './oggetti.js?v=7';
+import * as O from './oggetti.js?v=8';
 
 // Ambienti: HDRI, rotazione, esposizione, direzione e dimensione della luce principale.
 const AMBIENTI = [

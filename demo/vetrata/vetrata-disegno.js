@@ -1,7 +1,7 @@
 // Disegno della finestra in "coordinate di cartone" (texel della texture, y verso il basso).
 // Due tele: REGIONI (ogni pezzo di colore ha un id, codificato nel canale rosso) e PITTURA
 // (la grisaglia: il marrone scuro che i vetrai dipingevano su volti, pieghe e scritte).
-import { disegnaSanto, disegnaBaldacchino } from './vetrata-santo.js?v=7';
+import { disegnaSanto, disegnaBaldacchino } from './vetrata-santo.js?v=8';
 
 export const TW = 624, TH = 1024;            // cartone = 7,3 m × 12 m
 export const LANC = { yS: 560, yB: 1012, sx: [18, 306], dx: [318, 606], d: 10 };

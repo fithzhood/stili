@@ -5,7 +5,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { FullScreenQuad } from 'three/addons/postprocessing/Pass.js';
-import { costruisciMondo, altezza, rng } from './sumie-mondo.js?v=7';
+import { costruisciMondo, altezza, rng } from './sumie-mondo.js?v=8';
 
 THREE.ColorManagement.enabled = false;
 const Q = Demo.query;

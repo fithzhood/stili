@@ -1,7 +1,7 @@
 // Demo "voxel": un'isola sospesa a cubetti da scavare e ricostruire.
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import * as M from './mondo.js?v=7';
+import * as M from './mondo.js?v=8';
 
 try {
   Demo.carica('Genero l\'isola');

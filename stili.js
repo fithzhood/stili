@@ -17,11 +17,12 @@
       <div class="quadro">
         <img alt="" loading="lazy" src="anteprime/${s.id}.jpg?v=${VERSIONE}">
         <span class="dim">${s.dim}</span>
-        <div class="desc">${s.descrizione}</div>
+        <div class="desc">${s.descrizione}${s.asset ? `<em>Già pronti: ${s.asset}.</em>` : ''}</div>
       </div>
       <div class="didascalia">
         <span class="num">${String(i + 1).padStart(2, '0')}</span>
-        <div><h2>${s.titolo}</h2><p>${s.ispirazione}</p></div>
+        <div><h2>${s.titolo}</h2><p>${s.ispirazione}</p>
+          <span class="orig ${s.asset ? 'pronti' : 'codice'}" title="${s.asset ? 'Già pronti: ' + s.asset : 'Nessun asset esterno'}">${s.asset ? 'Con asset già pronti' : 'Tutto disegnato dal codice'}</span></div>
       </div>`;
     const img = a.querySelector('img');
     img.onerror = () => { img.remove(); a.querySelector('.quadro').insertAdjacentHTML('afterbegin', `<div class="vuoto">${s.titolo}</div>`); };

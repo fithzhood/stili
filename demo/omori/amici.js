@@ -1,6 +1,6 @@
 // La coperta del picnic con il cestino, gli amici che dormono e il protagonista (tutti inventati:
 // testoni tondi, occhi a puntino, pastelli tenui).
-import { rng, curva, ellisse, tratto, pastello, ombra, copri } from './matita.js?v=7';
+import { rng, curva, ellisse, tratto, pastello, ombra, copri } from './matita.js?v=8';
 
 // punto dentro un quadrilatero (interpolazione bilineare), per disegnare i quadretti in prospettiva
 const quad = (Q, u, v) => [0, 1].map(i => (Q[0][i] * (1 - u) + Q[1][i] * u) * (1 - v) + (Q[3][i] * (1 - u) + Q[2][i] * u) * v);

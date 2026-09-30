@@ -1,9 +1,9 @@
 // Tratto tremolante: un sogno quasi tutto bianco disegnato a matita e pastelli.
 // Ogni disegno è prerenderizzato in tre varianti con il tratto spostato di poco; si alternano
 // tre volte e mezza al secondo (line boil). Niente immagini: tutto nasce dal codice.
-import { OGGETTI, OCCHI, SPR, prerendiTutto, TP } from './mondo.js?v=7';
-import { filo, occhi, zeta, preparaRiquadro, BOX, testo, linea } from './vivi.js?v=7';
-import { grana, ellisse, rng } from './matita.js?v=7';
+import { OGGETTI, OCCHI, SPR, prerendiTutto, TP } from './mondo.js?v=8';
+import { filo, occhi, zeta, preparaRiquadro, BOX, testo, linea } from './vivi.js?v=8';
+import { grana, ellisse, rng } from './matita.js?v=8';
 
 const cv = document.createElement('canvas');
 cv.className = 'sogno'; document.body.prepend(cv);

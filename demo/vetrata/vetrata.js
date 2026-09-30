@@ -1,7 +1,7 @@
 // Vetrata gotica: la finestra si taglia al caricamento (cartone → tessere → texture),
 // poi un solo shader fa parete, finestra, pavimento, luce proiettata e raggi nel pulviscolo.
-import { creaCartone, TW, TH } from './vetrata-disegno.js?v=7';
-import { tagliaVetro } from './vetrata-vetro.js?v=7';
+import { creaCartone, TW, TH } from './vetrata-disegno.js?v=8';
+import { tagliaVetro } from './vetrata-vetro.js?v=8';
 
 Demo.carica('Taglio il vetro', 0.1);
 await new Promise(r => setTimeout(r, 30));
@@ -26,6 +26,6 @@ if (Q.get('cartone')) {
   Demo.loop(() => {});
   Demo.pronto();
 } else {
-  const { avvia } = await import('./vetrata-scena.js?v=7');
+  const { avvia } = await import('./vetrata-scena.js?v=8');
   avvia(vetro);
 }

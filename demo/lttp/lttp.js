@@ -1,12 +1,12 @@
 // 16 bit dall'alto: un villaggio ai margini del bosco su uno schermo logico fisso di 320×180,
 // ingrandito a scala intera senza filtro. Mappa a tessere su tre strati (pavimento, oggetti,
 // chiome sopra il personaggio), tessere animate, ombre a mezza tinta. Grafica: Ninja Adventure (CC0).
-import { T, C, R, costruisci, taglio } from './mappa.js?v=7';
-import { IMG, cam, preparaOmbre, pavimento, oggetti, chiome } from './disegno.js?v=7';
-import { G, colpisci, aggiornaEroe, aggiornaParti, disegnaEroe, disegnaParti, disegnaPremi } from './eroe.js?v=7';
-import { popola, ABITANTI, aggiornaVita, abitanteDavanti, attoriVita, disegnaFarfalle, disegnaFoglie } from './vita.js?v=7';
-import { preparaTessere } from './tessere.js?v=7';
-import { preparaHud, disegnaHud, disegnaDialogo, aCapo } from './hud.js?v=7';
+import { T, C, R, costruisci, taglio } from './mappa.js?v=8';
+import { IMG, cam, preparaOmbre, pavimento, oggetti, chiome } from './disegno.js?v=8';
+import { G, colpisci, aggiornaEroe, aggiornaParti, disegnaEroe, disegnaParti, disegnaPremi } from './eroe.js?v=8';
+import { popola, ABITANTI, aggiornaVita, abitanteDavanti, attoriVita, disegnaFarfalle, disegnaFoglie } from './vita.js?v=8';
+import { preparaTessere } from './tessere.js?v=8';
+import { preparaHud, disegnaHud, disegnaDialogo, aCapo } from './hud.js?v=8';
 
 const LW = 320, LH = 180;
 const cv = document.createElement('canvas');
@@ -22,7 +22,7 @@ addEventListener('resize', ridimensiona);
 
 const NOMI = ['floor', 'nature', 'house', 'water', 'element', 'detail', 'eroe', 'eroe-colpo', 'donna', 'vecchio',
   'ragazzo', 'ragazza', 'gallina', 'gatto', 'fendente', 'ciuffi', 'foglie', 'moneta', 'font', 'raggi'];
-const carica = n => new Promise((ok, ko) => { const i = new Image(); i.onload = () => { IMG[n] = i; ok(); }; i.onerror = () => ko(new Error('Manca ' + n)); i.src = 'assets/' + n + '.png?v=7'; });
+const carica = n => new Promise((ok, ko) => { const i = new Image(); i.onload = () => { IMG[n] = i; ok(); }; i.onerror = () => ko(new Error('Manca ' + n)); i.src = 'assets/' + n + '.png?v=8'; });
 
 let dialogo = null, fotogramma = 0;
 // In modalità foto senza tasti tenuti, un piccolo copione mette in posa la scena dell'anteprima.

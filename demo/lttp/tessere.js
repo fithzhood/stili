@@ -1,5 +1,5 @@
 // Tessere disegnate a codice: l'erba alta (due fotogrammi, le punte ondeggiano) e l'ombra dei piedi.
-import { IMG } from './disegno.js?v=7';
+import { IMG } from './disegno.js?v=8';
 
 function erbaAlta(onda) {
   const c = document.createElement('canvas'); c.width = 16; c.height = 21;

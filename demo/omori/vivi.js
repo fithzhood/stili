@@ -1,6 +1,6 @@
 // Disegni che cambiano ogni fotogramma: il filo della lampadina, gli occhi nel buio, le zeta di chi
 // dorme, il riquadro del testo scritto a mano. Tremano anche loro: il seme dipende dalla variante.
-import { rng, ellisse, prerendi, tratto } from './matita.js?v=7';
+import { rng, ellisse, prerendi, tratto } from './matita.js?v=8';
 
 // linea a matita disegnata al volo sul contesto del mondo (stesso gesto del prerender, più leggero)
 export function linea(g, pts, v, o = {}) {
